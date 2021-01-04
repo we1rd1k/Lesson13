@@ -24,7 +24,7 @@ public class DocumentConverter {
                 price = Float.parseFloat(reader.readLine());
                 amount= quantity*price;
                 all = all + amount;
-                System.out.printf("%s %f X %f =%f \n", name, quantity, price, amount);
+                System.out.format("%-20s %-5.2f X %-7.2f =%-1.2f \n", name, quantity, price, amount);
             }
         }catch (IOException e) {
             e.printStackTrace();
